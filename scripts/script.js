@@ -7,10 +7,10 @@ async function fetchProducts() {
 
     const data = await rawData.json();
 
-    // console.log(data);
+    console.log(data);
 
     // products !!
-    const productContainer = document.querySelector(".products");
+    let productContainer = document.querySelector(".products");
     productContainer.innerHTML = ``;
 
     let productTemplate = ``;
@@ -24,7 +24,7 @@ async function fetchProducts() {
                 <img src="${data[i].image}" class="rounded mx-auto d-block" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${data[i].title}</h5>
-                    <p class="card-text">${data[i].description}</p>
+                    <p class="card-text">${data[i].category}</p>
                     <p class="card-text">₹ ${Math.round(data[i].price)}</p>
                     <p class="card-text">&bigstar; ${data[i].rating.rate} | ${data[i].rating.count}</p>
 

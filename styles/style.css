@@ -44,6 +44,12 @@
 
 }
 
+.hidden {
+    display: none;
+
+}
+
+
 
 /* main-section */
 .main {

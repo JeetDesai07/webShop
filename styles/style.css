@@ -86,3 +86,8 @@
     background-color: rgb(250, 249, 249);
 
 }
+
+.product-card img {
+    width: 50%;
+
+}

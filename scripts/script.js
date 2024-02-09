@@ -28,7 +28,7 @@ async function fetchProducts() {
                     <p class="card-text">₹ ${Math.round(data[i].price)}</p>
                     <p class="card-text">&bigstar; ${data[i].rating.rate} | ${data[i].rating.count}</p>
 
-                    <button class="btn btn-danger">Add to Cart</button>
+                    <button onclick="add2Cart();" class="btn btn-danger">Add to Cart</button>
                 </div>
             </div>
     
